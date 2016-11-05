@@ -1,0 +1,15 @@
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= label_tag(:y, "Search for ingredients separated by commas:") %>
+  <%= text_field_tag(:y) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<% @steakrecipes.get['results'].each do |recipe| %>
+
+  <!-- <h1><%= recipe['title'] %></h1> -->
+  <%= link_to recipe['title'], recipe['href'] %>
+  <p><%=recipe['ingredients']%></p>
+  <img src="<%=recipe['thumbnail']%>"/>
+<% end %>
