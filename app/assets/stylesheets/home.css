@@ -1,0 +1,43 @@
+* {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  align-content: center;
+}
+
+body{
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% ;
+}
+.main {
+  align-self: auto;
+  text-align: center;
+      text-shadow: 2px 2px 4px black;
+}
+.logo {
+  margin-top: 10em;
+  text-align: center;
+  background-color: transparent;
+}
+#opener {
+    text-align: center;
+    font-size: 3em;
+}
+.secondary {
+  margin: 10 0 100 0;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+button, input, textarea{
+    background-color: white;
+}
+ #button{
+   color:black;
+ }

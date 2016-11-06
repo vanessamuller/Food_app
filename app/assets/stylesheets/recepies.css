@@ -1,0 +1,46 @@
+.recipes {
+  background-color: #250a5b;
+}
+
+
+recipes{
+  /*background-color: #b7e3e4;*/
+  font-family: 'Open Sans', sans-serif;
+}
+.col-md-4{
+  height: 25rem;
+  border: 1px solid black;
+}
+
+.row{
+
+}
+
+#name{
+  text-align: center;
+}
+
+a:link{
+  color: #f03f35;
+}
+
+a:visited{
+  color: #f03f35;
+}
+
+a:hover{
+  color: #f03f35;
+}
+
+a:active{
+  color: #f03f35;
+}
+
+.center{
+  text-align: center;
+}
+
+.new-search{
+  text-align: center;
+  margin-bottom: 10rem;
+}

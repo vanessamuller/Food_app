@@ -1,3 +1,21 @@
+<div class='recipes'>
+<% if @steakrecipes.get['results'].length>0%>
+
+<div class="row">
+<% @steakrecipes.get['results'].each do |recipe| %>
+
+  <!-- <h1><%= recipe['title'] %></h1> -->
+  <div class="col-md-4 center">
+    <h3><%= link_to recipe['title'], recipe['href'] %></h3>
+    <p><%=recipe['ingredients']%></p>
+    <img src="<%=recipe['thumbnail']%>"/>
+  </div>
+<% end %>
+</div>
+  <h3 class="new-search"><%= link_to 'New Search', root_path %></h3>
+<% else %>
+
+<h1>No Results Found</h1>
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
   <%= text_field_tag(:q) %>
@@ -6,10 +24,5 @@
   <%= submit_tag("Search") %>
 <% end %>
 
-<% @steakrecipes.get['results'].each do |recipe| %>
-
-  <!-- <h1><%= recipe['title'] %></h1> -->
-  <%= link_to recipe['title'], recipe['href'] %>
-  <p><%=recipe['ingredients']%></p>
-  <img src="<%=recipe['thumbnail']%>"/>
-<% end %>
+<%end%>
+</div>
