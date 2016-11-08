@@ -1,25 +1,25 @@
-<div class="main">
-<div class="logo">
-  <%= image_tag("logo2.png", alt: 'gourmate_logo') %>
-</div>
-<h1 id="opener">
-  What do you have in your kitchen now?
-</h1>
-<div class="main2">
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Enter main ingredient:") %>
-  </br>
-  <div class='field'><%= text_field_tag(:q) %></div>
-</div>
-<div class="secondary">
-  <%= label_tag(:y, "Enter up to two optional ingredients (separated by commas):") %>
-  </br>
-  <%= text_field_tag(:y) %>
-  </br>
-  <div id='button'><%= submit_tag("Search") %></div>
-<% end %>
-</div>
-<div class="footer">
-  © 2016 Gour-Mate, LLC. - All rights reserved.
-</div>
-</div>
+<body class="main">
+  <div class="logo">
+    <%= image_tag("logo_white.png", alt: 'gourmate_logo') %>
+  </div>
+  <h1 id="opener">
+    What do you have in your kitchen now?
+  </h1>
+  <div class="main2">
+  <%= form_tag("/search", method: "get") do %>
+    <%= label_tag(:q, "Enter main ingredient:") %>
+    </br>
+    <div class='field'><%= text_field_tag(:q) %></div>
+  </div>
+  <div class="secondary">
+    <%= label_tag(:y, "Enter up to two optional ingredients (separated by commas):") %>
+    </br>
+    <%= text_field_tag(:y) %>
+    </br>
+    <div id='button'><%= submit_tag("Search") %></div>
+  <% end %>
+  </div>
+  <div class="footer">
+    © 2016 Gour-Mate, LLC. - All rights reserved.
+  </div>
+</body>

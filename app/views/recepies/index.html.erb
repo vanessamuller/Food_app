@@ -1,3 +1,7 @@
+<body class="page">
+
+
+<div class='logo2'> <%= image_tag("logo_red.png", alt: 'gourmate_logo') %> </div>
 <div class='recipes'>
 <% if @steakrecipes.get['results'].length>0%>
 
@@ -5,14 +9,18 @@
 <% @steakrecipes.get['results'].each do |recipe| %>
 
   <!-- <h1><%= recipe['title'] %></h1> -->
-  <div class="col-md-4 center">
+  <div class="results">
     <h3><%= link_to recipe['title'], recipe['href'] %></h3>
     <p><%=recipe['ingredients']%></p>
-    <img src="<%=recipe['thumbnail']%>"/>
+    <% if recipe['thumbnail'].empty? %>
+      <%= image_tag("recipe.png", alt: "recipe")%>
+    <%else%>
+      <img src="<%=recipe['thumbnail']%>"/>
+    <%end%>
   </div>
 <% end %>
 </div>
-  <h3 class="new-search"><%= link_to 'New Search', root_path %></h3>
+  <h3 class="btn btn-default"><%= link_to 'New Search', root_path %></h3>
 <% else %>
 
 <h1>No Results Found</h1>
@@ -26,3 +34,4 @@
 
 <%end%>
 </div>
+</body>
