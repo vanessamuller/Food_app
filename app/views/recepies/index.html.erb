@@ -20,7 +20,7 @@
   </div>
 <% end %>
 </div>
-  <h3 class="btn btn-default"><%= link_to 'New Search', root_path %></h3>
+  <h3><%= button_to 'New Search', root_path,class: "btn btn-default", method: :get %></h3>
 <% else %>
 
 <h1>No Results Found</h1>

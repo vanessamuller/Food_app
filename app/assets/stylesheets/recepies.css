@@ -9,21 +9,14 @@
 
 
 recipes{
-  /*background-color: #b7e3e4;*/
   font-family: 'Open Sans', sans-serif;
-
 }
-/*.col-md-6{*/
-  /*height: 25rem;
-  border: 1px solid black;*/
-  /*text-align: center;
-}*/
+
 
 .results{
   text-align: center;
   margin:auto;
   width:50%;
-  /*background-color: rgba(255,255,255,0.8);*/
 }
 
 .logo2{
@@ -58,9 +51,9 @@ a:active{
 .new-search{
   text-align: center;
   padding: 3rem;
-  /*margin-bottom: 10rem;*/
 }
- h3.btn.btn-default{
+
+ .btn.btn-default{
   text-align: center;
   margin:0 auto;
   display:table;
@@ -69,4 +62,5 @@ a:active{
   background-color: #b7e3e4;
   font-weight: 900;
   font-size: large;
+  color: #f03f35;
  }

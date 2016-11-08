@@ -2,12 +2,13 @@ class MenuController < ApplicationController
   def index
     ingredients = params[:i]
     page = params[:y]
-    @profile = HTTParty.get('http://www.recipepuppy.com/api/?i=onions,garlic,%20chicken&p=1').parsed_response
-    @profile = @profile['data']['pins'].map do |x|
-      {img_url: x['images']['237x']['url'],
-      link: x['link']}
-
+    @results = HTTParty.get('http://www.recipepuppy.com/api/?i=chicken&q=onions,garlic&p=1').parsed_response
+    @results = @results['results'].map do |x|
+      {title: x['title'],
+      link: x['href'],
+      ingredients: x['ingredients'],
+      thumbnail: x['thumbnail']}
     end
-    p @profile
+    p @results
   end
 end
