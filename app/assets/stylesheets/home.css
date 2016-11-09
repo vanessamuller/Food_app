@@ -27,6 +27,7 @@ body{
   margin-top: 10em;
   text-align: center;
   background-color: transparent;
+  margin: 0 auto;
 }
 #opener {
   color:white;
