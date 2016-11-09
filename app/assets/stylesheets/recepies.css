@@ -1,6 +1,6 @@
 .page {
   /*background-color: white;*/
-  background-image: url("background_clear.jpeg");
+  background: image-url("background_clear.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
