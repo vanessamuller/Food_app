@@ -1,0 +1,149 @@
+* {
+
+  font-family: 'Open Sans', sans-serif;
+  align-content: center;
+}
+
+body{
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover ;
+  vertical-align: middle;
+}
+
+
+.main2{
+  color:white;
+  font-size: 1.7rem;
+}
+
+.main {
+  align-self: auto;
+  text-align: center;
+      text-shadow: 2px 2px 4px black;
+}
+.logo {
+  margin-top: 10em;
+  text-align: center;
+  background-color: transparent;
+  margin: 0 auto;
+}
+#opener {
+  color:white;
+  text-align: center;
+  font-size: 3em;
+}
+.secondary {
+  margin: 10 0 100 0;
+  color:white;
+  font-size: 1.7rem;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  color:white;
+}
+
+button, input, select, textarea{
+    background-color: white;
+    color:black;
+}
+ #button{
+   color:black;
+   margin-top:2rem;
+ }
+
+input#y{
+  color:black;
+}
+
+input#q{
+  color:black;
+}
+.page {
+  /*background-color: white;*/
+  background-image: url("background_clear.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height:100%;
+}
+
+
+recipes{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.results{
+  text-align: center;
+  margin:auto;
+  width:50%;
+}
+
+.logo2{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#name{
+  text-align: center;
+}
+
+a:link{
+  color: #f03f35;
+}
+
+a:visited{
+  color: #f03f35;
+}
+
+a:hover{
+  color: #f03f35;
+}
+
+a:active{
+  color: #f03f35;
+}
+
+.center{
+  text-align: center;
+}
+
+.new-search{
+  text-align: center;
+  padding: 3rem;
+}
+
+ .btn.btn-default{
+  text-align: center;
+  margin:0 auto;
+  display:table;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: #b7e3e4;
+  font-weight: 900;
+  font-size: large;
+  color: #f03f35;
+ }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
